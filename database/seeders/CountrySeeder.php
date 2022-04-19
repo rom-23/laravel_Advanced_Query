@@ -35,7 +35,7 @@ class CountrySeeder extends Seeder
 
                 foreach ($hotels as $hotel)
                 {
-                    $hotel->rooms()->saveMany(Room::factory(random_int(3,10))->make());
+                    $hotel->rooms()->saveMany(Room::factory(random_int(3,4))->make());
                 }
             }
         }

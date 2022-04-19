@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
                     $room_ids = [];
                     for($i=1; $i<= random_int(1,3); $i++)
                     {
-                        $room_ids[] = random_int(1, 20);
+                        $room_ids[] = random_int(1, 3);
                     }
                     $reservation->rooms()->attach($room_ids, ['status' => (bool) random_int(0,1)]);
                 }
